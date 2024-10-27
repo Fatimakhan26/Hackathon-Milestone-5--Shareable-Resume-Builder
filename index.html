@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shareable-Resume-Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form id="resumeForm">
+    <h2>Personal Information</h2>
+
+    <label for="username">UserName:</label>
+    <input type="text" id="username" name="username"> <br> <br>
+
+    <label for="DOB">Date Of Birth:</label>
+    <input type="text" id="dob" name="dob" required> <br> <br>
+
+    <label for="gender">Gender:</label>
+    <input type="text" id="gender" gender="gender" required> <br> <br>
+
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email"> <br> <br>
+
+    <label for="phone">Phone:</label>
+    <input type="text" id="phone" phone="phone" required> <br> <br>
+
+    <label for="country">Country:</label>
+    <input type="text" id="country" city="country" required> <br> <br>
+
+    <h2>Education</h2>
+    <label for="education">Education:</label>
+    <input type="text" id="education" name="education"> <br> <br>
+
+    <h2>Experience</h2>
+    <label for="experience">Experience:</label>
+    <input type="text" id="experience" name="experience"> <br> <br>
+
+    <h2>Skills</h2>
+    <label for="skills">Skills:</label>
+    <input type="text" id="skills" name="skills"> <br> <br>
+
+<button type="submit">Generate Resume</button>
+
+</form>
+<div id="resumeOutput"></div> <br>
+<div id="shareable-link-container" style="display: none;">
+<h2>Shareable Link</h2>
+<a href="shareable-link" id="shareable-link" target="_blank"></a> <br>
+<button id="download-pdf"><b>Download as PDF</b></button>
+</div>
+    <script src="app.js"></script>
+
+
+</body>
+</html>
